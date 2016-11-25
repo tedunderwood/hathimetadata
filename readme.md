@@ -11,11 +11,13 @@ how this was produced
 ---------------------
 When I produced metadata before 1923, I wrote up a full report detailing the process. Part of the reason I'm calling this repo "work in progress" is that I don't have time to fully document the process yet. I've put some relevant scripts in the code folder, but they're not fully documented.
 
-The important thing to know is that the process I've used here is slightly different from, and simpler than, the process that produced the earlier metadata. Instead of training models that examine every book at the page level, I've moved toward a two-stage workflow:
+The important thing to know is that the process I've used here is slightly different from, and simpler than, the process that produced the earlier metadata. Instead of training models that examine every book at the page level, I've moved toward a three-stage workflow:
 
-1. Identify volumes of poetry, fiction, and biography.
+1. Identify volumes of poetry, fiction, and biography, using a predictive model that works on word frequencies at the volume level.
 
-2. Gather page-level training data *for each genre* and model pages *only within that genre.*
+2. Filter the corpus for certain predictable kinds of error (non-English-language volumes, juvenile fiction, etc).
+
+3. Gather page-level training data *for each genre* and model pages *only within that genre.*
 
 This is a simpler process, and I think actually a more accurate one, but exact figures for precision and recall are yet to come. (I can tell you precision and recall on the training and test sets, but I've found that's not very meaningful. You really need to look at a separate sample of the collection — and since these are works in copyright, "looking at the works" is never easy.)
 
