@@ -1,6 +1,8 @@
 Metadata for English-Language Fiction beyond 1923
 =================================================
 
+This directory contains comma-separated tables with volume-level information, as well as a subdirectory of *page*-level information about those volumes. You only need the page-level information if you want to try trimming front and back matter. That may or may not be important, depending on your application.
+
 ficmeta.csv
 -----------
 
@@ -12,7 +14,15 @@ I have included some of the probabilities calculated by predictive models as col
 
 Note also that this collection *has not been deduplicated.* When there are multiple copies or reprints of a work, it will occur multiple times in this table.
 
-**A quick explanation of columns in the table.**
+juvenileficmeta.csv
+-------------------
+
+Contains volumes that were flagged as "for a juvenile audience," either by manual metadata or by a predictive model.
+
+key to columns in both metadata tables
+--------------------------------------
+
+A quick explanation of columns in the table. Note that I have often used pipe characters (|) as separators within a field.
 
 **docid** HathiTrust Volume ID; this is a unique identifier for volumes.
 
@@ -43,3 +53,7 @@ Note also that this collection *has not been deduplicated.* When there are multi
 **metadatalikely** is a flag that is set to TRUE only if there was evidence in the **genres** field, or in the title, suggesting that this work was fiction
 
 **metadatasuspicious** Indicates that there is evidence in the metadata militating against this being fiction. Only a very small number of these volumes are included, and several of those look like errors!
+
+pages
+-----
+Folder containing page-level information about most of the volumes in **ficmeta** and about half of the volumes in **juvenileficmeta**.
