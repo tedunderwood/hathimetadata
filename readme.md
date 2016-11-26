@@ -23,7 +23,7 @@ This is a simpler process, and I think actually a more accurate one, but exact f
 
 [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
 
-If you use this metadata you can acknowledge it as Ted Underwood, "Metadata for English-Language Literature in HathiTrust Digital Library Beyond 1923," https://github.com/tedunderwood/hathimetadata
+If you use this metadata you can acknowledge it as Ted Underwood, "Metadata for English-Language Literature in HathiTrust Digital Library Beyond 1923," v0.1, Dec 2016, https://github.com/tedunderwood/hathimetadata
 
 
 
