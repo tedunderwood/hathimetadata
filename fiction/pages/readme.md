@@ -11,7 +11,9 @@ Within each JSON object, you will find the following keys:
 
 **numpages** Total number of pages in the volume. This will also be the length of **predictions,** but I have broken it out separately for ease of use.
 
-**predictions** A list of probabilities, one per page, estimating the probability that the page is fiction rather than front matter, back matter, or nonfiction. If you want to get every page that might be fiction, use this to select pages individually.
+**predictions** A list of probabilities, one per page, estimating the probability that the page is fiction rather than front matter, back matter, or nonfiction. The sequence of pages is defined to be the same as the sequence in the 2016 release of the Extracted Feature files.
+
+If you want to get every page that might be fiction, use this to select pages individually.
 
 Alternatively, if you want to get a sequence of *contiguous* pages identified as fiction, you can use the two fields **firstpg** and **lastpg**, which will ignore isolated pages predicted to be fiction but floating improbably in a sea of nonfiction. This consolidation is done by the function **trimends** in the script **implementpagemodel.**
 

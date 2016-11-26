@@ -31,6 +31,10 @@ implementpagemodel.py
 ---------------------
 Implements the page-level model.
 
+parsefeaturejsons.py
+--------------------
+Reads JSON files from HTRC extracted features. Called by the previous script.
+
 implementsubfic.py
 ------------------
 Trains models specifically of nonfiction, and juvenile fiction, mistakenly-included in the intermediate stage of ficmeta.csv,
