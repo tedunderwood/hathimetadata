@@ -1,9 +1,9 @@
 Metadata for English-Language Literature in HathiTrust Digital Library Beyond 1923
 ==================================================================================
 
-This repository holds metadata pointing to English-language fiction (and, eventually poetry) in HathiTrust Digital Library. It will cover only the period after 1923.
+This repository holds probabilistic inferred metadata pointing to English-language fiction (and, eventually poetry) in HathiTrust Digital Library. It covers only the period after 1923.
 
-**If you want metadata before 1923,** that's already available as a finished product. You can access the raw metadata, which points to particular volumes and pages that contain poetry, fiction, or drama. (Then you'll have to pair the metadata with the actual text, or with wordcounts downloaded from the HathiTrust Extracted Feature page.) Or, for ease of use, you can directly download word-frequency information for volumes in literary genres.
+**If you want metadata before 1923,** that's already available as a finished product. You can access [the raw metadata, which points to particular volumes and pages that contain poetry, fiction, or drama](https://figshare.com/articles/Page_Level_Genre_Metadata_for_English_Language_Volumes_in_HathiTrust_1700_1922/1279201). (Then you'll have to pair the metadata with the actual text, or with wordcounts downloaded from the [HathiTrust Extracted Feature page](https://wiki.htrc.illinois.edu/display/COM/Extracted+Features+Dataset).) Or, for ease of use, you can directly download [word-frequency information for volumes in literary genres](https://wiki.htrc.illinois.edu/display/COM/Word+Frequencies+in+English-Language+Literature%2C+1700-1922).
 
 This repository holds work in progress toward metadata for the period **beyond 1923.** Please note the phrase "work in progress." I haven't made this an official data publication, because the repo will keep changing and expanding throughout 2017, and perhaps 2018. (For instance, I'll add metadata for poetry.) But I wanted to share what I have, since it may be useful for other researchers.
 
