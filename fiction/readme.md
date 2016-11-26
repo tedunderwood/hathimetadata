@@ -1,4 +1,4 @@
-Metadata for English-Language Fiction beyond 1923.
+Metadata for English-Language Fiction beyond 1923
 =================================================
 
 ficmeta.csv
@@ -22,4 +22,24 @@ Note also that this collection *has not been deduplicated.* When there are multi
 
 **imprint** Place, publisher, and date are separated by (|) pipe characters. The date listed here may not always be the date provided in
 
-**inferreddate** This is my best guess about date of publication. It is based on the four columns **datetype, startdate,** and **enddate,** which are drawn from [character positions 06-14 of MARC field 008.](https://www.loc.gov/marc/bibliographic/bd008a.html) For an explanation of thes columns see
+**inferreddate** This is my best guess about date of publication. It is based mainly on the three columns **datetype, startdate,** and **enddate,** which are drawn from [character positions 06-14 of MARC field 008.](https://www.loc.gov/marc/bibliographic/bd008a.html) 
+
+**place** This is a code, drawn from the MARC metadata, reflecting place of publication; to interpret it see the [MARC Code List for Countries.](https://www.loc.gov/marc/countries/)
+
+**enumcron** When there is more than one volume in a work, this code disambiguates the volumes.
+
+**subjects** and **geographics** are Library of Congress headings that a cataloger assigned to the work. Geographics indicate that the work is about a specific region.
+
+**genres** are mostly Library of Congress genre/form headings, but this column has also been used to record some flags contained in [character position 33 of Marc field 008](https://www.loc.gov/marc/bibliographic/bd008b.html). You'll notice that in many cases this field states "Not fiction." That reflects the fact that a 0 (not fiction) was entered in this field. The unreliability of existing genre metadata is why I felt I needed to train predictive models.
+
+**rawprobability** The initial probability of being fiction assigned by a model that was contrasting fiction to *everything else in HathiTrust*--i.e., poetry and drama as well as nonfiction
+
+**englishtop1000pct** The fraction of the words in the book drawn from the top 1000 words in an English dictionary sorted by frequency. I used this to weed out works that weren't actually written in English, despite metadata saying they were.
+
+**nonficprob** The probability that this work was nonfiction. The fiction/nonfiction boundary is tricky, so it was useful to train a model specifically for that boundary, leaving aside poetry, drama, etc.
+
+**juvenileprob** I also trained a model to identify juvenile fiction. Volumes with a high probability in this column are set aside in a distinct table.
+
+**metadatalikely** is a flag that is set to TRUE only if there was evidence in the **genres** field, or in the title, suggesting that this work was fiction
+
+**metadatasuspicious** Indicates that there is evidence in the metadata militating against this being fiction. Only a very small number of these volumes are included, and several of those look like errors!
