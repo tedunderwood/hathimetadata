@@ -19,7 +19,7 @@ The process I've used here is slightly different from the process that produced 
 
 3. Gather page-level training data *for each genre* and model pages *only within that genre.*
 
-I think this multi-stage filtering process is more accurate than my earlier process, but exact figures for precision and recall are yet to come. (I can tell you precision and recall on the training and test sets, but that's not very meaningful. You really need to look at a separate sample of the collection — and since these are works in copyright, "looking at the works" is never easy.) For right now, I would just say, "here's some metadata if you want a way to start looking for fiction, but I can't provide warrantees about accuracy yet." 
+I think this multi-stage filtering process is more accurate than my earlier process, but exact figures for precision and recall are yet to come. (I can tell you precision and recall on the training and test sets, but that's not very meaningful. You really need to look at a separate sample of the collection — and since these are works in copyright, "looking at the works" is never easy.) For right now, I would just say, "here's some metadata if you want a way to start looking for fiction, but I can't provide warranties about accuracy yet." 
 
 [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
 
