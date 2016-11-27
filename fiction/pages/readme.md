@@ -3,7 +3,7 @@ Page-level data for fiction in HathiTrust, post-1923
 
 These are [JSON Lines](http://jsonlines.org) files, meaning that each line is a separate JSON object, for a different volume.
 
-We have a page-level record for most of the volumes in **ficmeta** and **juvenileficmeta**: a total of 114,974 volumes. There are 95 volumes that lack page-level data for assorted reasons.
+I believe we have a page-level record for all of the volumes in **ficmeta** and **juvenileficmeta**: a total of 114,974 volumes.
 
 The files have been divided by date, using the **inferreddate** column of the metadata table.
 
