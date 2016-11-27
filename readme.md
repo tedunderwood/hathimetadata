@@ -9,9 +9,9 @@ This repository holds work in progress toward metadata for the period **beyond 1
 
 how this was produced
 ---------------------
-When I produced metadata before 1923, I wrote up a full report detailing the process. Part of the reason I'm calling this repo "work in progress" is that I don't have time to fully document the process yet. I've put some relevant scripts in the code folder, but they're not fully documented.
+When I produced metadata before 1923, I wrote up [a full report detailing the process.](https://figshare.com/articles/Understanding_Genre_in_a_Collection_of_a_Million_Volumes_Interim_Report/12812) Part of the reason I'm calling this repo "work in progress" is that I don't have time to fully document the process yet. I've put some relevant scripts in the code folder, but they're not fully documented.
 
-The important thing to know is that the process I've used here is slightly different from, and simpler than, the process that produced the earlier metadata. Instead of training models that examine every book at the page level, I've moved toward a three-stage workflow:
+The process I've used here is slightly different from the process that produced the earlier metadata. Instead of training models that examine every book at the page level, I've moved toward a three-stage workflow:
 
 1. Identify volumes of poetry, fiction, and biography, using a predictive model that works on word frequencies at the volume level.
 
@@ -19,7 +19,7 @@ The important thing to know is that the process I've used here is slightly diffe
 
 3. Gather page-level training data *for each genre* and model pages *only within that genre.*
 
-This is a simpler process, and I think actually a more accurate one, but exact figures for precision and recall are yet to come. (I can tell you precision and recall on the training and test sets, but I've found that's not very meaningful. You really need to look at a separate sample of the collection — and since these are works in copyright, "looking at the works" is never easy.)
+I think this multi-stage filtering process is more accurate than my earlier process, but exact figures for precision and recall are yet to come. (I can tell you precision and recall on the training and test sets, but that's not very meaningful. You really need to look at a separate sample of the collection — and since these are works in copyright, "looking at the works" is never easy.) For right now, I would just say, "here's some metadata if you want a way to start looking for fiction, but I can't provide warrantees about accuracy yet." 
 
 [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
 
