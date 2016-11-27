@@ -1,7 +1,7 @@
 Metadata for English-Language Literature in HathiTrust Digital Library Beyond 1923
 ==================================================================================
 
-This repository holds probabilistic inferred metadata pointing to English-language fiction (and, eventually poetry) in HathiTrust Digital Library. It covers only the period after 1923.
+This repository holds probabilistic inferred metadata pointing to English-language fiction (and, eventually poetry) in HathiTrust Digital Library. It covers volumes that were tagged as "in copyright," mostly dated after 1923.
 
 **If you want metadata before 1923,** that's already available as a finished product. You can access [the raw metadata, which points to particular volumes and pages that contain poetry, fiction, or drama](https://figshare.com/articles/Page_Level_Genre_Metadata_for_English_Language_Volumes_in_HathiTrust_1700_1922/1279201). (Then you'll have to pair the metadata with the actual text, or with wordcounts downloaded from the [HathiTrust Extracted Feature page](https://wiki.htrc.illinois.edu/display/COM/Extracted+Features+Dataset).) Or, for ease of use, you can directly download [word-frequency information for volumes in literary genres](https://wiki.htrc.illinois.edu/display/COM/Word+Frequencies+in+English-Language+Literature%2C+1700-1922).
 

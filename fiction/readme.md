@@ -6,7 +6,7 @@ This directory contains comma-separated tables with volume-level information, as
 ficmeta.csv
 -----------
 
-This is a list of volumes that I believe to contain fiction. It has not been manually checked; it was produced by predictive modeling, and reflects estimated probabilities. If you have high standards for accuracy, probably the best approach is to view this as a starting-place for further work. 
+This is a list of 104,043 volumes that I believe to contain fiction. It has not been manually checked; it was produced by predictive modeling, and reflects estimated probabilities. If you have high standards for accuracy, probably the best approach is to view this as a starting-place for further work. 
 
 I have tried to err on the side of inclusiveness. This collection will include many more volumes of fiction than you would get if you relied purely on genre tags in the existing MARC records. But it will also include a certain number of volumes that are better characterized as biography, travel writing, or folklore. 
 
@@ -17,7 +17,7 @@ Note also that this collection *has not been deduplicated.* When there are multi
 juvenileficmeta.csv
 -------------------
 
-Contains volumes that were flagged as "for a juvenile audience," either by manual metadata or by a predictive model.
+Contains 10,931 volumes that were flagged as "for a juvenile audience," either by manual metadata or by a predictive model.
 
 key to columns in both metadata tables
 --------------------------------------
@@ -32,7 +32,9 @@ A quick explanation of columns in the table. Note that I have often used pipe ch
 
 **imprint** Place, publisher, and date are separated by (|) pipe characters. The date listed here may not always be the date provided in
 
-**inferreddate** This is my best guess about date of publication. It is based mainly on the three columns **datetype, startdate,** and **enddate,** which are drawn from [character positions 06-14 of MARC field 008.](https://www.loc.gov/marc/bibliographic/bd008a.html) 
+**inferreddate** This is my best guess about date of publication. It is based mainly on the three columns **datetype, startdate,** and **enddate,** which are drawn from [character positions 06-14 of MARC field 008.](https://www.loc.gov/marc/bibliographic/bd008a.html)
+
+Note that **inferreddate** will be reported as **zero** in cases where the algorithm couldn't reliably discern a true date. This is not an ideal way to handle missing data, but this is work in progress.
 
 **place** This is a code, drawn from the MARC metadata, reflecting place of publication; to interpret it see the [MARC Code List for Countries.](https://www.loc.gov/marc/countries/)
 
@@ -56,4 +58,4 @@ A quick explanation of columns in the table. Note that I have often used pipe ch
 
 pages
 -----
-Folder containing page-level information about most of the volumes in **ficmeta** and about half of the volumes in **juvenileficmeta**.
+Folder containing page-level information about most of the volumes in **ficmeta** and **juvenileficmeta**.
