@@ -25,6 +25,8 @@ I think this multi-stage filtering process is more accurate than my earlier proc
 
 If you use this metadata you can acknowledge it as Ted Underwood, "Metadata for English-Language Literature in HathiTrust Digital Library Beyond 1923," v0.1, Dec 2016, https://github.com/tedunderwood/hathimetadata
 
-
+poetry
+------
+I also produced this. No warranty, express or implied.
 
 
