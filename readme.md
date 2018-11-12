@@ -9,7 +9,7 @@ This repository holds work in progress toward metadata for the period **beyond 1
 
 how this was produced
 ---------------------
-When I produced metadata before 1923, I wrote up [a full report detailing the process.](https://figshare.com/articles/Understanding_Genre_in_a_Collection_of_a_Million_Volumes_Interim_Report/12812) Part of the reason I'm calling this repo "work in progress" is that I don't have time to fully document the process yet. I've put some relevant scripts in the code folder, but they're not fully documented.
+When I produced metadata before 1923, I wrote up [a full report detailing the process.](https://figshare.com/articles/Understanding_Genre_in_a_Collection_of_a_Million_Volumes_Interim_Report/1281251) Part of the reason I'm calling this repo "work in progress" is that I don't have time to fully document the process yet. I've put some relevant scripts in the code folder, but they're not fully documented.
 
 The process I've used here is slightly different from the process that produced the earlier metadata. Instead of training models that examine every book at the page level, I've moved toward a three-stage workflow:
 
